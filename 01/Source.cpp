@@ -6,7 +6,8 @@
 
 using namespace std;
 
-/* exercise 1
+/* 
+//exercise 1
 
 int getNum();
 
@@ -37,7 +38,8 @@ int getNum() {
 }
 */
 
-/* exercise 1
+/* 
+//exercise 2
 int CompanyRev();
 const double eastCostPerc = 0.58;
 
@@ -73,6 +75,8 @@ int CompanyRev() {
 */
 
 /*
+//exercise 3
+
 int getNum();
 
 const double stateTax = 0.04;
@@ -114,6 +118,7 @@ int getNum() {
 */
 
 /*
+//exercise 4
 int getNum(string);
 
 const double TAX = 0.0675,
@@ -152,6 +157,7 @@ int getNum(string prompt) {
 */
 
 /*
+* exercise 5
 double getNum(string);
 
 int main() {
@@ -195,6 +201,133 @@ double getNum(string prompt) {
 */
 
 /*
-did it work??????
-sssnot showing on github
+//exercise 6
+double const payAmount = 2200.00;
+double const payPeriods = 26.00;
+
+int main() {
+ 	
+	double annualPay = 0;
+
+	annualPay = (payAmount * payPeriods);
+
+	cout << "Your anual income is $" << annualPay << endl;
+}
+
+*/
+
+
+/*
+//exercise 7
+
+double const oceanRise = 1.5;
+
+int main() {
+
+	double fiveYearRise = 0,
+		sevenYearRise = 0,
+		tenYearRise = 0;
+
+	fiveYearRise = ((oceanRise * 5) - 1.5);
+	sevenYearRise = ((oceanRise * 7) - 1.5);
+	tenYearRise = ((oceanRise * 10) - 1.5);
+
+	cout << "After 5 years the sea level will be " << fiveYearRise << " millimeters higher \n";
+	cout << "After 7 years the sea level will be " << sevenYearRise << " higher \n";
+	cout << "After 10 years the sea level will be " << tenYearRise << " higher \n";
+
+	
+}
+
+*/
+
+/*
+//exercise 8
+
+double posNum(string);
+
+double const TAX = 0.07;
+
+int main() {
+	double item1 = 0,
+		item2 = 0,
+		item3 = 0,
+		item4 = 0,
+		item5 = 0,
+		totalItem = 0,
+		totalSalesTax = 0,
+		totalSale = 0;
+
+	item1 = posNum("Please, enter sale 1: ");
+	item2 = posNum("Please, enter sale 2: ");
+	item3 = posNum("Please, enter sale 3: ");
+	item4 = posNum("Please, enter sale 4: ");
+	item5 = posNum("Please, enter sale 5: ");
+
+	totalItem = (item1 + item2 + item3 + item4 + item5);
+	totalSalesTax = (totalItem * TAX);
+	totalSale = (totalItem + totalSalesTax);
+
+	cout << "The total of of your purchase is $" << totalSale << " which is $" << totalItem << " for the items and tax of $" << totalSalesTax << endl;
+
+}
+
+double posNum(string prompt) {
+	double userNum = 0;
+	bool validNum = true;
+
+	do {
+		cout << prompt;
+		cin >> userNum;
+		validNum = (userNum < 0);
+		if (validNum) {
+			cout << "There no negative sales! try again.";
+		}
+
+
+	} while (validNum);
+
+	return userNum;
+
+}
+
+*/
+
+/*
+//exercise 10
+
+double posNum(string);
+
+int main() {
+	double gas = 0,
+		miles = 0,
+		mpg = 0;
+
+	gas = posNum("How many gallons of gas does your car take? ");
+	miles = posNum("How many miles does it travel? ");
+	mpg = (miles / gas);
+
+	cout << "Your car can perform at " << mpg << " miles/gallom";
+	
+}
+
+double posNum(string prompt) {
+	double userNum = 0;
+	bool validNum = true;
+
+	do {
+		cout << prompt;
+		cin >> userNum;
+		validNum = (userNum < 0);
+		if (validNum) {
+			cout << "There no negative! try again.";
+		}
+
+
+	} while (validNum);
+
+	return userNum;
+
+}
+
 */
