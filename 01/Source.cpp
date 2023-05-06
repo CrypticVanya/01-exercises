@@ -196,5 +196,5 @@ double getNum(string prompt) {
 
 /*
 did it work??????
-not showing on github
+sssnot showing on github
 */
