@@ -331,3 +331,90 @@ double posNum(string prompt) {
 }
 
 */
+
+/*
+//exercise 11
+
+int main() {
+
+	double gasTank = 20,
+		distanceTown = 0,
+		distanceHW = 0;
+		   
+	distanceTown = (gasTank * 23.5);
+	distanceHW = (gasTank * 28.9);
+
+	cout << "Your 20Gallon car can travel " << distanceTown << "miles in town and " << distanceHW << " miles in the highway.";
+
+}
+
+*/
+
+
+/*
+//exercise 12
+
+int const ACRE = 43560;
+
+int main() {
+	int userInput = 0;
+
+	double tractLand = 0;
+
+	cout << "Enter the number of the tract of land: ";
+	cin >> userInput;
+
+	tractLand = ((double)userInput / ACRE);
+
+	cout << "There number of acres in your lans is " << tractLand;
+}
+*/
+
+/*
+//exercise 13
+
+double const PROFITPERCENTAGE = 0.35;
+
+int main() {
+	double sellPrice = 0,
+		   profitPrice = 0;
+
+	cout << "Enter the price of the item: ";
+	cin >> sellPrice;
+
+	profitPrice = (sellPrice + (sellPrice * PROFITPERCENTAGE));
+
+	cout << "In order to keep your 35% profit margin, you must sell this item at $" << profitPrice;
+}
+*/
+
+/*
+//exercise 14
+
+int main() {
+	string userFn = "",
+		adress = "",
+		city = "",
+		state = "",
+		zipCode = "";
+
+	cout << "Enter your name: ";
+	getline(cin, userFn);
+	cout << "Enter your adress: ";
+	getline(cin, adress);
+	cout << "Enter your city: ";
+	getline(cin, city);
+	cout << "Enter your state: ";
+	getline(cin, state);
+	cout << "Enter your zipcode: ";
+	getline(cin, zipCode);
+
+	cout << "Your name is " << userFn << "\n"
+		<< "your address is " << adress << "\n"
+		<< "your city is " << city << "\n"
+		<< "your state is " << state << "\n"
+		<< "your zipcode is " << zipCode << "\n";
+}
+
+*/
+
